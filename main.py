@@ -4,6 +4,7 @@ from typing import Optional
 
 def attack(char_name: Optional[str],
            char_class: Optional[str]) -> Optional[str]:
+    """Use it to attack one's opponent."""
     if char_class == 'warrior':
         return (f'{char_name} нанёс урон')
         (f'противнику равный {5 + randint(3, 5)}')
@@ -18,6 +19,7 @@ def attack(char_name: Optional[str],
 
 def defence(char_name: Optional[str],
             char_class: Optional[str]) -> Optional[str]:
+    """Use it to defence themselves."""
     if char_class == 'warrior':
         return (f'{char_name} блокировал {10 + randint(5, 10)} урона')
     if char_class == 'mage':
@@ -29,6 +31,7 @@ def defence(char_name: Optional[str],
 
 def special(char_name: Optional[str],
             char_class: Optional[str]) -> Optional[str]:
+    """Use it to use special technique."""
     if char_class == 'warrior':
         return (f'{char_name} применил специальное умение')
         (f'«Выносливость {80 + 25}»')
